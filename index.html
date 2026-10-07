@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ayşenaz</title>
+<meta name="description" content="Ayşenaz'ın kişisel sitesi">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ECE9FF; --ink:#1B1646; --muted:#4B4680; --accent:#FF6B3D; --mint:#BFF0D4; --card:#FFFFFF;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#14102F; --ink:#F1EEFF; --muted:#B9B3E6; --accent:#FF8A63; --mint:#1F4D3B; --card:#201B4A;}
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.6;font-size:1.0625rem;
+  padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0);
+}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;font-weight:600}
+nav ul{display:flex;gap:1.5rem;list-style:none;padding:0}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:6px;text-decoration-thickness:3px}
+.hero{padding:clamp(3rem,10vw,7rem) 0 clamp(3rem,8vw,5rem)}
+.hero h1{
+  font-size:clamp(4rem,19vw,12rem);font-weight:800;line-height:.9;letter-spacing:-.045em;
+  font-variation-settings:"opsz" 96;
+}
+.hero h1 span{display:inline-block;transform-origin:50% 100%;animation:pop .9s cubic-bezier(.2,1.4,.4,1) both}
+.hero h1 span:nth-child(2){animation-delay:.05s}.hero h1 span:nth-child(3){animation-delay:.1s}
+.hero h1 span:nth-child(4){animation-delay:.15s}.hero h1 span:nth-child(5){animation-delay:.2s}
+.hero h1 span:nth-child(6){animation-delay:.25s}.hero h1 span:nth-child(7){animation-delay:.3s}
+@keyframes pop{from{opacity:0;transform:translateY(40%) rotate(-6deg)}to{opacity:1;transform:none}}
+.hero p{max-width:34rem;margin-top:1.75rem;font-size:1.3rem;color:var(--muted)}
+.dot{display:inline-block;width:.9em;height:.9em;background:var(--accent);border-radius:50%;vertical-align:-.05em;margin-left:.1em}
+section{padding:3rem 0}
+h2{font-size:2rem;letter-spacing:-.02em;margin-bottom:1.25rem}
+.about{display:grid;gap:2rem;grid-template-columns:1fr}
+.about p{max-width:38rem;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0}
+.chips li{background:var(--mint);color:var(--ink);padding:.45rem 1rem;border-radius:999px;font-weight:600}
+@media (prefers-color-scheme:dark){.chips li{color:#E6FFF2}}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.card{background:var(--card);padding:1.5rem;border-radius:1.25rem}
+.card:nth-child(2){border-radius:2.5rem 1.25rem 1.25rem 1.25rem}
+.card:nth-child(3){border-radius:1.25rem 1.25rem 2.5rem 1.25rem}
+.card h3{font-size:1.25rem;margin-bottom:.4rem}
+.card p{color:var(--muted);font-size:1rem}
+.contact a.big{
+  display:inline-block;font-size:clamp(1.5rem,5vw,2.75rem);font-weight:800;letter-spacing:-.03em;
+  text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:.12em;text-underline-offset:.15em;
+  word-break:break-all;
+}
+.links{display:flex;gap:1.25rem;margin-top:1.25rem;flex-wrap:wrap;font-weight:600}
+footer{padding:3rem 0 2rem;color:var(--muted);font-size:.95rem}
+@media (prefers-reduced-motion:reduce){.hero h1 span{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Ana menü">
+    <a href="#top">aysenaz.xyz</a>
+    <ul>
+      <li><a href="#hakkimda">Hakkımda</a></li>
+      <li><a href="#projeler">Projeler</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="top">
+    <h1 aria-label="Ayşenaz"><span>A</span><span>y</span><span>ş</span><span>e</span><span>n</span><span>a</span><span>z</span><span class="dot" aria-hidden="true"></span></h1>
+    <p>Merhaba, ben Ayşenaz. Bu benim küçük köşem: neler yaptığımı, neyi sevdiğimi ve bana nasıl ulaşabileceğini burada bulabilirsin.</p>
+  </header>
+
+  <section id="hakkimda" class="about">
+    <div>
+      <h2>Hakkımda</h2>
+      <p>Türkiye'de yaşayan bir öğrenciyim. Şu an üniversite sınavına hazırlanıyorum ve boş zamanlarımda yeni şeyler öğrenmeyi, denemeyi seviyorum. Bu siteyi zamanla kendi işlerimle doldurmayı planlıyorum.</p>
+    </div>
+    <ul class="chips" aria-label="İlgi alanları">
+      <li>Çalışmak</li>
+      <li>Merak etmek</li>
+      <li>Müzik</li>
+      <li>Kitaplar</li>
+      <li>Teknoloji</li>
+    </ul>
+  </section>
+
+  <section id="projeler">
+    <h2>Projeler</h2>
+    <div class="grid">
+      <article class="card"><h3>Çalışma notlarım</h3><p>Sınav hazırlığında işime yarayan kısa notlar ve özetler. Yakında burada.</p></article>
+      <article class="card"><h3>Mini projeler</h3><p>Denediğim küçük fikirler ve uygulamalar. Yakında burada.</p></article>
+      <article class="card"><h3>Okuma listesi</h3><p>Okuduğum ve okumak istediğim kitaplar. Yakında burada.</p></article>
+    </div>
+  </section>
+
+  <section id="iletisim" class="contact">
+    <h2>İletişim</h2>
+    <a class="big" href="mailto:merhaba@aysenaz.xyz">merhaba@aysenaz.xyz</a>
+    <div class="links">
+      <a href="https://instagram.com/" rel="noopener">Instagram</a>
+      <a href="https://github.com/" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+  <footer>© <span id="y">2026</span> Ayşenaz</footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
